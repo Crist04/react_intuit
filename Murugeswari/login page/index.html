@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="about-link">About Us</a></li>
+                <li><a href="#" id="services-link">Services</a></li>
+                <li><a href="#" id="contact-link">Contact</a></li>
+                <li><a href="#" id="login-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="input-group checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#" id="terms-link">Terms and Conditions</a></label>
+                </div>
+                <button type="submit">Login</button>
+                <p class="signup-link">Don't have an account? <a href="#" id="register-link">Register here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
