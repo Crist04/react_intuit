@@ -1,0 +1,125 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.7;
+    padding-top: 200px; /* Adjust for fixed header */
+}
+
+/* Circular Profile Photo */
+.profile-photo {
+    width: 120px;  /* Adjust the size as needed */
+    height: 120px;  /* Adjust the size as needed */
+    border-radius: 50%;  /* Makes the image circular */
+    object-fit: cover;  /* Ensures the image fits the circle */
+    position: absolute;  /* Positions it within the header */
+    top: 10px;  /* Adjust the top position as needed */
+    right: 30px;  /* Adjust the right position as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+header .contact-info a {
+    color: #fff;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+
+
+/* Main Content Section */
+.container {
+    margin-top: 30px;
+}
+
+h2 {
+    font-weight: 600;
+    color: #2575fc;
+    border-bottom: 3px solid #2575fc;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Card */
+.section-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-card h4 {
+    font-weight: 600;
+    color: #333;
+}
+
+.section-card p, .section-card ul {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.section-card ul {
+    padding-left: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    margin-top: 10px; /* Add some margin to separate from the contact info */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove bullets from list items */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space out the links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d1d1d1; /* Light gray color on hover */
+}
+
+/* White Line Above Navbar */
+.white-line {
+    height: 3px; /* Height of the line */
+    background-color: #fff; /* White color */
+    width: 90%; /* Full width */
+    margin: 10; /* Remove any default margin */
+    border: none; /* Ensure no border */
+}
