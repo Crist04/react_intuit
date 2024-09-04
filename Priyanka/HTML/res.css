@@ -1,0 +1,186 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Container for Grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columns grid system */
+    gap: 0; /* gap between items */
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto; /* Center container */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    grid-column: span 12; /* Full-width header */
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    grid-column: span 12; /* Full-width hero */
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.btn-primary {
+    background: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 40px;
+}
+
+.highlights h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mainc {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.mainc .highlight {
+    grid-column: span 4; /* 3 items per row */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.highlight img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.highlight h3 {
+    margin-top: 10px;
+}
+
+/* Products Section */
+#products {
+    padding: 40px;
+}
+
+#products h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#products .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    grid-column: span 4; /* 3 items per row */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.grid-item h3 {
+    margin: 0.5em 0;
+}
+
+.grid-item p {
+    margin: 0.5em 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    grid-column: span 12; /* Full-width footer */
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mainc .highlight,
+    .grid-item {
+        grid-column: span 6; /* 2 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .mainc .highlight,
+    .grid-item {
+        grid-column: span 12; /* 1 item per row */
+    }
+
+    nav ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
