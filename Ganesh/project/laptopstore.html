@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to the Laptop Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <article class="product">
+                        <img src="images/acer.png" alt="ACER">
+                        <h2>Acer Chromebook Plus</h2>
+                        <p>65,000</p>
+                        <button onclick="addToCart('Acer Chromebook Plus')">Add to Cart</button>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="product">
+                        <img src="images/asus.jpg" alt="ASUS">
+                        <h2>ASUS</h2>
+                        <p>66,000</p>
+                        <button onclick="addToCart('ASUS')">Add to Cart</button>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="product">
+                        <img src="images/dell.jpg" alt="DELL">
+                        <h2>DELL</h2>
+                        <p>70,000</p>
+                        <button onclick="addToCart('DELL')">Add to Cart</button>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="product">
+                        <img src="images/hp.jpg" alt="HP">
+                        <h2>HP</h2>
+                        <p>75,000</p>
+                        <button onclick="addToCart('HP')">Add to Cart</button>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="product">
+                        <img src="images/lenovo.jpg" alt="Lenovo">
+                        <h2>Lenovo</h2>
+                        <p>70,000</p>
+                        <button onclick="addToCart('Lenovo')">Add to Cart</button>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="product">
+                        <img src="images/applemacbookpro.jpg" alt="Apple MacBook Pro">
+                        <h2>Apple MacBook Pro</h2>
+                        <p>99,999</p>
+                        <button onclick="addToCart('Apple MacBook Pro')">Add to Cart</button>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="cart-message" class="cart-message"></div>
+</body>
+</html>
