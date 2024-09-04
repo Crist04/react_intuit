@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UR's Boutique</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UR's Boutique</title>
+    <style>
+        /* Global Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-	    background: linear-gradient(135deg, #c0517d, #e9c4cd);
+            background: linear-gradient(135deg, #c0517d, #e9c4cd);
         }
         header {
             background: linear-gradient(135deg, #a4305e, #e9c4cd);
@@ -20,6 +21,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            font-style: italic;
         }
         nav {
             margin-top: 10px;
@@ -27,6 +29,7 @@
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
             display: inline;
@@ -42,9 +45,6 @@
             color: #ffeb3b;
         }
         .hero {
-            background: url('
-https://via.placeholder.com/1200x400')
-no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -52,25 +52,34 @@ no-repeat center center/cover;
         .hero h2 {
             font-size: 3em;
             margin: 0;
-	    position: relative;
-	    top: 100px;
+            font-style: italic;
+            color: beige;
         }
         .hero p {
             font-size: 1.2em;
             margin-top: 10px;
+            font-style: italic;
+            color: beige;
         }
-        .products {
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .row {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
+            margin: -15px;
+        }
+        .col-4 {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+            padding: 15px;
         }
         .product-card {
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            width: 300px;
             overflow: hidden;
             transition: transform 0.3s;
         }
@@ -79,7 +88,7 @@ no-repeat center center/cover;
         }
         .product-card img {
             width: 100%;
-            height: auto;
+            height: 500px;
         }
         .product-card .content {
             padding: 15px;
@@ -91,70 +100,130 @@ no-repeat center center/cover;
         }
         .product-card p {
             color: #666;
+            line-height: 1.5;
         }
- </style>
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .col-4 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .hero h2 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .col-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .hero h2 {
+                font-size: 1.8em;
+            }
+            .hero p {
+                font-size: 0.9em;
+            }
+	.product-card img{
+    		width:200px;
+padding: 19px 10px 20px 46px;        }
+	.product-card{
+		width:30%;
+	}
+	}
+
+    </style>
 </head>
 <body>
 <header>
-<h1 style="font-style: Italic;">UR's Boutique</h1>
-<nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Shop</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-</nav>
+    <h1>UR's Boutique</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 </header>
-<img src="https://th.bing.com/th/id/OIP.hBQxWJgaNuGlDJkA0BHPpQAAAA?rs=1&pid=ImgDetMain" style= "background-repeat: no-repeat;
-	    width: 100vw;
-	    height: 80vh;
-">
+<img src="https://th.bing.com/th/id/OIP.hBQxWJgaNuGlDJkA0BHPpQAAAA?rs=1&pid=ImgDetMain" alt="banner" style="width: 100%; height: 80vh; object-fit: cover;">
 <div class="hero">
-<h2 style="position: relative; top: -527px; text-align:center; color: beige;
-    font-size: 65px; font-style:Italic;">Discover Your Style</h2>
-<p style=" font-style:Italic; font-size:40px; color:Beige;position:relative;top:-139px;">Explore our exclusive collection and find the perfect fit for you</p>
+    <h2>Discover Your Style</h2>
+    <p>Explore our exclusive collection and find the perfect fit for you</p>
 </div>
-<div class="products" style="position:relative;top:-144px;">
-<div class="product-card">
-<img src="https://d44ri6pmeripj.cloudfront.net/morilee/wp-content/uploads/2021/10/47071-0144-scaled.jpg" width="300" height="300"
-alt="product 1">
-<div class="content" style="position: relative;
-    top: -13px;
-    left: 16px;
-">
-<h3>BALL GOWN</h3>
-<p style=" line-height: 6px;
-    margin-bottom: 60px;">Sky blue elegant netted Gown</p>
-</div>
-</div>
-<div class="product-card">
-<img src="https://i.pinimg.com/474x/c4/56/bd/c456bd80ce365d75923f87d375ff617c.jpg" width="300" height="300"
-alt="Product 2">
-<div class="content" style="position: relative;
-    top: -13px;
-    left: 16px;
-">
-<h3>PARTY GOWN</h3>
-<p style=" line-height: 6px;
-    margin-bottom: 60px;">Navy Blue Off shoulder Princess Gown</p>
-</div>
-</div>
-<div class="product-card">
-<img src="https://cdn.shopify.com/s/files/1/2102/5691/products/139_1024x1024.jpg?v=1571609828" width="300" height="300"
-alt="Product 3">
-<div class="content" style="position: relative;
-    top: -13px;
-    left: 16px;
-">
-<h3>WEDDING GOWN</h3>
-<p style=" line-height: 6px;
-    margin-bottom: 60px;">Luxury Lace Wedding Princess Ball Gown</p>
-</div>
-</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="product-card">
+                <img src="https://d44ri6pmeripj.cloudfront.net/morilee/wp-content/uploads/2021/10/47071-0144-scaled.jpg" alt="Ball Gown">
+                <div class="content">
+                    <h3>BALL GOWN</h3>
+                    <p>Sky blue elegant netted Gown</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/474x/c4/56/bd/c456bd80ce365d75923f87d375ff617c.jpg" alt="Party Gown">
+                <div class="content">
+                    <h3>PARTY GOWN</h3>
+                    <p>Navy Blue Off shoulder Princess Gown</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="product-card">
+                <img src="https://cdn.shopify.com/s/files/1/2102/5691/products/139_1024x1024.jpg?v=1571609828" alt="Wedding Gown">
+                <div class="content">
+                    <h3>WEDDING GOWN</h3>
+                    <p>Luxury Lace Wedding Princess Ball Gown</p>
+                </div>
+            </div>
+        </div>
+	<div class="col-4">
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.lo-eXLRvaj-uJSLlCfwiBQHaJ2?pid=ImgDet&w=208&h=276&c=7&dpr=1.5" alt="Wedding Gown">
+                <div class="content">
+                    <h3>WEDDING GOWN</h3>
+                    <p>Luxury Emerald Green Wedding Princess Ball Gown</p>
+                </div>
+            </div>
+        </div>
+	<div class="col-4">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/236x/ff/49/fb/ff49fbcc862a00bbb31372ada8c521a6.jpg" alt="Wedding Gown">
+                <div class="content">
+                    <h3>WEDDING GOWN</h3>
+                    <p>Luxury Brown Flared Wedding Princess Gown</p>
+                </div>
+            </div>
+        </div>
+	<div class="col-4">
+            <div class="product-card">
+                <img src="https://www.jovani.com/image/cache/catalog/evening-dresses/23362-%204-561x902.jpg" alt="Wedding Gown">
+                <div class="content">
+                    <h3>WEDDING GOWN</h3>
+                    <p>Navy blue RhineStone Bodycon Wedding Gown</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
-<p style="background-color: Black; text-align: center; color: white; height: 45px; padding-top:15px;">&copy; 2024 Elegant Boutique. All rights reserved.</p>
+    <p>&copy; 2024 UR's Boutique. All rights reserved.</p>
 </footer>
 </body>
 </html>
