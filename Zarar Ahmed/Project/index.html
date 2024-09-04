@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second-Hand Car Sale</title>
+    <link rel="stylesheet" href="style.css">	
+</head>
+<body>
+    <header>
+        <h1>Second-Hand Car Sale</h1>
+    </header>
+    <div class="container">
+        <div class="car">
+            <img src="https://th.bing.com/th/id/R.73a5e3aa681c573236ec39f5c82b09a8?rik=F9i9CRahxCodbQ&riu=http%3a%2f%2fst.automobilemag.com%2fuploads%2fsites%2f11%2f2017%2f06%2f2018-Toyota-Camry-Hybrid-SE-front-three-quarters.jpg&ehk=OpWJ4jkme%2bbx8bVM7y6D6vXKucAwqXgO0QPm4dCmpNw%3d&risl=&pid=ImgRaw&r=0" alt="Car 1" alt="Car 1">
+            <div class="car-details">
+                <h2>2015 Toyota Camry</h2>
+                <p><strong>Price:</strong> Rs.15,00000</p>
+                <p><strong>Kilometers Driven:</strong> 60,000 kms</p>
+                <p><strong>Color:</strong> Red</p>
+                <p>This 2015 Toyota Camry is in excellent condition with low mileage.</p>
+                <button class="buy-button" onclick="showPopup('popup1')">Buy</button>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="https://st.automobilemag.com/uploads/sites/11/2015/10/2016-Honda-Civic-Touring-front-three-quarters-041.jpg" alt="Car 2">
+            <div class="car-details">
+                <h2>2018 Honda Civic</h2>
+                <p><strong>Price:</strong> Rs.18,00000</p>
+                <p><strong>Kilometers Driven:</strong> 40,000 kms</p>
+                <p><strong>Color:</strong> White</p>
+                <p>This 2018 Honda Civic offers great fuel efficiency.</p>
+                <button class="buy-button" onclick="showPopup('popup2')">Buy</button>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="https://th.bing.com/th/id/OIP.oCEpoqWR5MaLNiIt0NHDjAHaFj?rs=1&pid=ImgDetMain" alt="Car 3">
+            <div class="car-details">
+                <h2>2017 Swift Dzire</h2>
+                <p><strong>Price:</strong> Rs.480,000</p>
+                <p><strong>Kilometers Driven:</strong> 10,000 kms</p>
+                <p><strong>Color:</strong> White</p>
+                <p>This 2017 Swift Dezire is a compact family car.</p>
+                <button class="buy-button" onclick="showPopup('popup3')">Buy</button>
+            </div>
+        </div>
+	
+	<div class="car">
+            <img src="https://img.indianautosblog.com/2021/01/22/2020-mahindra-thar-front-3-quarters-620c.jpg" alt="Car 4">
+            <div class="car-details">
+                <h2>2020 Mahindra Thar</h2>
+                <p><strong>Price:</strong> Rs.900000</p>
+                <p><strong>Kilometers Driven:</strong> 8,000 kms</p>
+                <p><strong>Color:</strong> Black</p>
+                <p>This 2020 Mahindra Thar is a great offroad vehicle.</p>
+                <button class="buy-button" onclick="showPopup('popup2')">Buy</button>
+            </div>
+        </div>
+
+	<div class="car">
+            <img src="https://th.bing.com/th/id/OIP._hH_eFyWsO3VAcXFDuIaiAHaEK?pid=ImgDet&w=474&h=266&rs=1" alt="Car 5">
+            <div class="car-details">
+                <h2>2019 Kia Seltos</h2>
+                <p><strong>Price:</strong> Rs.11,00000</p>
+                <p><strong>Kilometers Driven:</strong> 12,000 kms</p>
+                <p><strong>Color:</strong> Red</p>
+                <p>This 2019 Kia Seltos offers great space with a stylish look.</p>
+                <button class="buy-button" onclick="showPopup('popup2')">Buy</button>
+            </div>
+        </div>
+
+	<div class="car">
+            <img src="https://th.bing.com/th/id/OIP.D_6fHMK9M6khnOO77xrR9AHaE8?rs=1&pid=ImgDetMain" alt="Car 6">
+            <div class="car-details">
+                <h2>2021 Mercedes C Class</h2>
+                <p><strong>Price:</strong> Rs.50,00000</p>
+                <p><strong>Kilometers Driven:</strong> 5,000 kms</p>
+                <p><strong>Color:</strong> White</p>
+                <p>This 2021 Mercedes offers umatched luxury and comfort in its class.</p>
+                <button class="buy-button" onclick="showPopup('popup2')">Buy</button>
+            </div>
+        </div>
+
+
+    </div>
+    
+    
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('popup1')">Close</button>
+            <h2>Contact Information</h2>
+            <p><strong>Owner:</strong> John Doe</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+        </div>
+    </div>
+    
+       <div id="popup2" class="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('popup2')">Close</button>
+            <h2>Contact Information</h2>
+            <p><strong>Owner:</strong> Jane Smith</p>
+            <p><strong>Phone:</strong> (987) 654-3210</p>
+            <p><strong>Email:</strong> janesmith@example.com</p>
+        </div>
+    </div>
+    
+        <div id="popup3" class="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('popup3')">Close</button>
+            <h2>Contact Information</h2>
+            <p><strong>Owner:</strong> Alice Johnson</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> alicejohnson@example.com</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Second-Hand Car Sale. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPopup(popupId) {
+            document.getElementById(popupId).style.display = 'flex';
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
