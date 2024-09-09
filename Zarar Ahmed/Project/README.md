@@ -11,5 +11,4 @@ Welcome to the Preowned Car Sales Website! This is a basic static site for brows
 ## File structure
 
 - **Index.html** - Main webpage.
-- **styles.css** - Day 1
-- **style.css** - Day 2 using grid system.
+- **style.css** -  CSS FILE
