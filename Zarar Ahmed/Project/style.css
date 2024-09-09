@@ -121,13 +121,95 @@ header {
     background-color: #c82333;
 }
 
+.nav-item{
+    margin:0px 40px 0px 40px;
+    font-size:large;
+}
+.navbar navbar-expand-lg bg-body-tertiary{
+    height: 50px;
+}
+
+
+
+.image1 {
+    position: relative; 
+    background-image: url('https://wallpapercave.com/wp/wp3635665.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+}
+
+.image1 img {
+    height: 100px;
+    width: auto;
+    display: block; 
+}
+
+.search {
+    position: absolute; 
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    background-color: rgba(255, 255, 255, 0.7); 
+
+    border-radius: 5px; 
+    width: 500px;
+}
+
+
+.form-control me-2{
+    max-width: 100%;
+}
+.text{
+    margin:20px 0 20px 40px;
+
+}
+.find{
+    position: absolute; 
+    top: 13%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+}
+
+@media (max-width: 768px) {
+    .image1{
+        height: 40vh; 
+    }
+    .search{
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image1 {
+        height: 50vh; 
+    }
+    .search{
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 240px) {
+    .image1 {
+        height: 50vh;
+    }
+    
+}
+
+
+
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 15px;
-    position: fixed;
+    position:relative;
     width: 100%;
     bottom: 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
