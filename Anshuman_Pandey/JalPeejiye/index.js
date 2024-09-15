@@ -3,7 +3,6 @@ const remainingEl = document.querySelector('.remaining')
 const litersEl = document.querySelector('.liters')
 const percentageEl = document.querySelector('.percentage')
 
-// It will operates the percentage and remaining water in the big glass
 function updateBigGlass() {
     const totalGlasses = smallGlassesEl.length;
     const fullGlassesEl = document.querySelectorAll('.small-glass.full').length;
@@ -22,30 +21,15 @@ function updateBigGlass() {
         remainingEl.style.height = 0
     } else {
         remainingEl.style.visibility = 'visible'
-        litersEl.innerText = `${4 - (500 * fullGlassesEl / 1000)}L`
+        litersEl.innerText = `${2 - (250 * fullGlassesEl / 1000)}L`
     }
 }
 
-// It will call the updateBigGlass function for every click on the small glasses
 smallGlassesEl.forEach((glass, id) => {
     glass.addEventListener('click', () => {
-        if (id===7 && smallGlassesEl[id].classList.contains("full")){
-            id--;
-        }
-        else if(smallGlassesEl[id].classList.contains('full') && !smallGlassesEl[id].nextElementSibling.classList.contains('full'))
-        {
-            id--;
-        }
-
-    smallGlassesEl.forEach((glass, id2) => {
-        if(id2 <= id) {
-            glass.classList.add('full')
-        } else {
-            glass.classList.remove('full')
-        }
-    })
-    updateBigGlass();
+            glass.classList.toggle('full')
+        updateBigGlass();
     })
 })
 
-updateBigGlass();
+
