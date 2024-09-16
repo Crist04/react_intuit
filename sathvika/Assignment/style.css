@@ -1,0 +1,47 @@
+h1{
+    color: brown;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.display{
+    background-color: rgb(132, 150, 196);
+    width:70vw;
+    height: 75vh;
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+.display h2 {
+    text-align: center;
+    color: white;
+}
+.container{
+    background-color:bisque;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    overflow:hidden ;
+    border-radius: 20px;
+    
+}
+.card{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display:flex;
+    flex: 0.5;
+    margin: 10px;
+    border-radius: 40px;
+    position: relative;
+    transition: all 500ms ease-in;
+    opacity: 0.7;
+}
+.card.active{
+    flex: 5;
+    opacity: 1.5;
+}
