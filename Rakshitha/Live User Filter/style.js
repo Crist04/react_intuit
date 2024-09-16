@@ -4,13 +4,13 @@ const userList = document.querySelector(".user-list");
 const noRecordsMessage = document.getElementById("no-records");
 
 searchBox.addEventListener("focus", () => {
-    content.style.display = "block"; // Show content when search box is focused
-    noRecordsMessage.style.display = "none"; // Hide no records message
+    content.style.display = "block"; 
+    noRecordsMessage.style.display = "none"; 
 });
 
 searchBox.addEventListener("input", () => {
     const searchTerm = searchBox.value.toLowerCase();
-    let hasVisibleUser = false;
+    
 
     userList.querySelectorAll("li").forEach(user => {
         const name = user.querySelector(".name").textContent.toLowerCase();
@@ -18,12 +18,13 @@ searchBox.addEventListener("input", () => {
         
         if (name.includes(searchTerm) || location.includes(searchTerm)) {
             user.style.display = "flex";
-            hasVisibleUser = true;
+             hasVisibleUser = true;
+           
         } else {
             user.style.display = "none";
-            noRecordsMessage.style.display="block";
+           
         }
     });
 
-    // Show or hide the "No Records found" message
+    noRecordsMessage.style.display = hasVisibleUser ? "none" : "block";
 });
