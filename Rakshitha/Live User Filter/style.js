@@ -10,6 +10,7 @@ searchBox.addEventListener("focus", () => {
 
 searchBox.addEventListener("input", () => {
     const searchTerm = searchBox.value.toLowerCase();
+    let hasVisibleUser=false;
     
 
     userList.querySelectorAll("li").forEach(user => {
