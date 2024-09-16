@@ -18,7 +18,7 @@ searchBox.addEventListener("input", () => {
         const location = user.querySelector(".location").textContent.toLowerCase();
         
         if (name.includes(searchTerm) || location.includes(searchTerm)) {
-            user.style.display = "block";
+            user.style.display = "flex";
              hasVisibleUser = true;
            
         } else {
