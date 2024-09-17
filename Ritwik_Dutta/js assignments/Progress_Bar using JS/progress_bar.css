@@ -1,0 +1,60 @@
+.progress{
+    width: 500px;
+    background-color: #f0f0f0;
+    height: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: 30%;
+}
+
+#pBar1{
+    position: absolute;
+}
+
+#pBar2{
+    background-color: blue;
+    width: 0px;
+    position: relative;
+    transition: width 0.3s ease-in;
+}
+
+.progress-bar{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    display: flex;
+    color: #aba3a3;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    margin-left: -1%;
+}
+
+#prev{
+    color: white;
+    width: 75px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(112, 112, 231);
+    margin-top: 19px;
+    margin-left: 44.5%;
+}
+
+#next{
+    color: white;
+    width: 75px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+}
+
+h2{
+    text-align: center;
+}
